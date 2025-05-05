@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drei & Erin - 4th Monthsary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .love-letter {
+      background: #fff0f5;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .music-toggle {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c0265b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>For Aki</h1>
+    <p class="subtitle">Happy Monthsary!</p>
+  </header>
+
+  <section class="love-letter">
+    <h2>My Love Letter </h2>
+    <p>
+      Dear Erin,<br><br>
+      Every day with you has been a beautiful chapter in the story of us. From the first time we met to today, you’ve filled my life with joy, laughter, and love. I want to thank you because, in the past 4 months, you've made me feel and experience things I never had before. I just hope we continue to enjoy this relationship and not rush into anything. I promise you that I'm only yours, I’ll always be by your side, with you through everything. Again, happy 4th monthsary, my aki!! ❤️<br><br>
+      Love,<br>
+      Aki
+    </p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; color:#d6336c;">Our Moments</h2>
+    <div class="gallery">
+      <!-- Replace these image paths with your own -->
+      <img src="https://assets.onecompiler.app/43gvrzfhm/43gvs3fjw/beach.jpg" alt="Moment 1">
+      <img src="https://assets.onecompiler.app/43gvrzfhm/43gvs3fjw/beach%201.jpg" alt="Moment 2">
+      <img src="https://assets.onecompiler.app/43gvrzfhm/43gvs3fjw/tagaytay.jpg" alt="Moment 3">
+      <img src="https://assets.onecompiler.app/43gvrzfhm/43gvs3fjw/tagaytay%201.jpg" alt="Moment 4">
+    </div>
+  </section>
+
+  <div class="music-toggle">
+    <button onclick="toggleMusic()">Toggle Music 🎵</button>
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <footer class="footer">
+    Made with ❤️ 
+  </footer>
+
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById("bgMusic");
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
